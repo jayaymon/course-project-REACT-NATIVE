@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\3-React\\nucampsite"
+		},
+		{
+			"path": "..\\..\\3-React\\dancestudio"
+		},
+		{
+			"path": "..\\..\\2-Bootstrap"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "3-React"
+	}
+}
