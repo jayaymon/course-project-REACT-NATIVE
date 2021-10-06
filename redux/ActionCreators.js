@@ -32,6 +32,7 @@ export const addComments = comments => ({
 });
 
 export const fetchCampsites = () => dispatch => {
+
     dispatch(campsitesLoading());
 
     return fetch(baseUrl + 'campsites')
@@ -68,7 +69,7 @@ export const addCampsites = campsites => ({
 });
 
 export const fetchPromotions = () => dispatch => {
-
+    
     dispatch(promotionsLoading());
 
     return fetch(baseUrl + 'promotions')
@@ -105,7 +106,7 @@ export const addPromotions = promotions => ({
 });
 
 export const fetchPartners = () => dispatch => {
-
+    
     dispatch(partnersLoading());
 
     return fetch(baseUrl + 'partners')
@@ -113,7 +114,7 @@ export const fetchPartners = () => dispatch => {
                 if (response.ok) {
                     return response;
                 } else {
-                    const error = new Error(`Error ${response.status}: ${responst.statusText}`);
+                    const error = new Error(`Error ${response.status}: ${response.statusText}`);
                     error.response = response;
                     throw error;
                 }
