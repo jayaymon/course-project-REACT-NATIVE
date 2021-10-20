@@ -115,7 +115,7 @@ class Reservation extends Component {
                             onPress={() =>
                                 Alert.alert(
                                     'Begin Search?',
-                                     'Number of Campers ' + this.state.campers + '\n' + '\n' + 'Hike-in? ' + this.state.hikeIn + '\n' + '\n' + 'Date: ' + this.state.date.toLocaleDateString('en-US'),
+                                     `Number of Campers: ${this.state.campers}` + '\n' + '\n' + `Hike-in? ${this.state.hikeIn}` + '\n' + '\n' + `Date: ${this.state.date.toLocaleDateString('en-US')}`,
                                     [
                                         {
                                             text: 'Cancel',
